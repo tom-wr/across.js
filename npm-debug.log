@@ -1,0 +1,171 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'yarn',
+1 verbose cli   '-g' ]
+2 info using npm@2.0.0
+3 info using node@v0.11.14
+4 verbose cache add [ 'yarn', null ]
+5 verbose cache add spec="yarn" args=["yarn",null]
+6 verbose parsed spec { raw: 'yarn',
+6 verbose parsed spec   scope: null,
+6 verbose parsed spec   name: 'yarn',
+6 verbose parsed spec   rawSpec: '',
+6 verbose parsed spec   spec: '*',
+6 verbose parsed spec   type: 'range' }
+7 verbose parsed spec { raw: 'yarn',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: 'yarn',
+7 verbose parsed spec   rawSpec: '',
+7 verbose parsed spec   spec: '*',
+7 verbose parsed spec   type: 'range' }
+8 verbose addNamed [ 'yarn', '*' ]
+9 verbose addNamed [ null, '*' ]
+10 silly lockFile 4dc9bff0-yarn yarn@*
+11 verbose lock yarn@* /home/tomto/.npm/4dc9bff0-yarn.lock
+12 silly addNameRange { name: 'yarn', range: '*', hasData: false }
+13 verbose mapToRegistry name yarn
+14 verbose mapToRegistry uri https://registry.npmjs.org/yarn
+15 verbose registry.get https://registry.npmjs.org/yarn not expired, no request
+16 silly addNameRange number 2 { name: 'yarn', range: '*', hasData: true }
+17 silly addNameRange versions [ 'yarn',
+17 silly addNameRange   [ '0.1.0',
+17 silly addNameRange     '0.1.1',
+17 silly addNameRange     '0.1.2',
+17 silly addNameRange     '0.1.3',
+17 silly addNameRange     '0.15.1',
+17 silly addNameRange     '0.16.0',
+17 silly addNameRange     '0.16.1',
+17 silly addNameRange     '0.17.0',
+17 silly addNameRange     '0.17.2',
+17 silly addNameRange     '0.17.3',
+17 silly addNameRange     '0.17.4',
+17 silly addNameRange     '0.17.5',
+17 silly addNameRange     '0.17.6',
+17 silly addNameRange     '0.17.7',
+17 silly addNameRange     '0.17.8',
+17 silly addNameRange     '0.17.9',
+17 silly addNameRange     '0.17.10',
+17 silly addNameRange     '0.18.0',
+17 silly addNameRange     '0.18.1',
+17 silly addNameRange     '0.19.0',
+17 silly addNameRange     '0.19.1',
+17 silly addNameRange     '0.20.0',
+17 silly addNameRange     '0.21.0',
+17 silly addNameRange     '0.20.3',
+17 silly addNameRange     '0.21.1',
+17 silly addNameRange     '0.21.2',
+17 silly addNameRange     '0.18.2',
+17 silly addNameRange     '0.20.4',
+17 silly addNameRange     '0.21.3',
+17 silly addNameRange     '0.22.0',
+17 silly addNameRange     '0.23.0',
+17 silly addNameRange     '0.23.1',
+17 silly addNameRange     '0.23.2',
+17 silly addNameRange     '0.23.3',
+17 silly addNameRange     '0.23.4',
+17 silly addNameRange     '0.24.0',
+17 silly addNameRange     '0.24.1',
+17 silly addNameRange     '0.24.2',
+17 silly addNameRange     '0.24.3',
+17 silly addNameRange     '0.24.4',
+17 silly addNameRange     '0.25.1',
+17 silly addNameRange     '0.24.5',
+17 silly addNameRange     '0.25.2',
+17 silly addNameRange     '0.24.6',
+17 silly addNameRange     '0.25.3',
+17 silly addNameRange     '0.25.4',
+17 silly addNameRange     '0.26.0',
+17 silly addNameRange     '0.26.1',
+17 silly addNameRange     '0.27.0',
+17 silly addNameRange     '0.27.1',
+17 silly addNameRange     '0.27.2',
+17 silly addNameRange     '0.27.3',
+17 silly addNameRange     '0.27.4',
+17 silly addNameRange     '0.27.5',
+17 silly addNameRange     '0.28.1',
+17 silly addNameRange     '0.28.4',
+17 silly addNameRange     '1.0.0',
+17 silly addNameRange     '1.0.1',
+17 silly addNameRange     '1.0.2',
+17 silly addNameRange     '1.1.0' ] ]
+18 verbose addNamed [ 'yarn', '1.1.0' ]
+19 verbose addNamed [ '1.1.0', '1.1.0' ]
+20 silly lockFile b5178d38-yarn-1-1-0 yarn@1.1.0
+21 verbose lock yarn@1.1.0 /home/tomto/.npm/b5178d38-yarn-1-1-0.lock
+22 silly lockFile b5178d38-yarn-1-1-0 yarn@1.1.0
+23 silly lockFile b5178d38-yarn-1-1-0 yarn@1.1.0
+24 silly lockFile 4dc9bff0-yarn yarn@*
+25 silly lockFile 4dc9bff0-yarn yarn@*
+26 silly resolved [ { name: 'yarn',
+26 silly resolved     installationMethod: 'tar',
+26 silly resolved     version: '1.1.0',
+26 silly resolved     license: 'BSD-2-Clause',
+26 silly resolved     preferGlobal: true,
+26 silly resolved     description: '📦🐈 Fast, reliable, and secure dependency management.',
+26 silly resolved     engines: { node: '>=4.0.0' },
+26 silly resolved     repository: { type: 'git', url: 'git+https://github.com/yarnpkg/yarn.git' },
+26 silly resolved     bin: { yarn: './bin/yarn.js', yarnpkg: './bin/yarn.js' },
+26 silly resolved     bugs: { url: 'https://github.com/yarnpkg/yarn/issues' },
+26 silly resolved     homepage: 'https://github.com/yarnpkg/yarn#readme',
+26 silly resolved     _id: 'yarn@1.1.0',
+26 silly resolved     _shasum: 'f2da9340490236b6c56de305b1c21a8a19c433c3',
+26 silly resolved     _resolved: 'https://registry.npmjs.org/yarn/-/yarn-1.1.0.tgz',
+26 silly resolved     _from: 'yarn@*',
+26 silly resolved     _npmVersion: '4.6.1',
+26 silly resolved     _nodeVersion: '8.5.0',
+26 silly resolved     _npmUser: { name: 'sebmck', email: 'sebmck@gmail.com' },
+26 silly resolved     dist:
+26 silly resolved      { shasum: 'f2da9340490236b6c56de305b1c21a8a19c433c3',
+26 silly resolved        tarball: 'https://registry.npmjs.org/yarn/-/yarn-1.1.0.tgz' },
+26 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+26 silly resolved     _npmOperationalInternal:
+26 silly resolved      { host: 's3://npm-registry-packages',
+26 silly resolved        tmp: 'tmp/yarn-1.1.0.tgz_1506278037064_0.17479452281259' },
+26 silly resolved     directories: {},
+26 silly resolved     readme: 'ERROR: No README data found!' } ]
+27 info install yarn@1.1.0 into /usr/local/lib
+28 info installOne yarn@1.1.0
+29 warn engine yarn@1.1.0: wanted: {"node":">=4.0.0"} (current: {"node":"0.11.14","npm":"2.0.0"})
+30 verbose lib/node_modules/yarn unbuild
+31 verbose gentlyRm vacuuming /usr/local/lib/node_modules/yarn
+32 verbose tar unpack /home/tomto/.npm/yarn/1.1.0/package.tgz
+33 silly lockFile f94a10a3--usr-local-lib-node-modules-yarn tar:///usr/local/lib/node_modules/yarn
+34 verbose lock tar:///usr/local/lib/node_modules/yarn /home/tomto/.npm/f94a10a3--usr-local-lib-node-modules-yarn.lock
+35 silly lockFile 3a219737-tomto-npm-yarn-1-1-0-package-tgz tar:///home/tomto/.npm/yarn/1.1.0/package.tgz
+36 verbose lock tar:///home/tomto/.npm/yarn/1.1.0/package.tgz /home/tomto/.npm/3a219737-tomto-npm-yarn-1-1-0-package-tgz.lock
+37 verbose gentlyRm vacuuming /usr/local/lib/node_modules/yarn
+38 silly gunzTarPerm modes [ '775', '664' ]
+39 verbose fstream_path /usr/local/lib/node_modules/yarn
+40 verbose fstream_type Directory
+41 verbose fstream_class DirWriter
+42 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/yarn'
+42 verbose stack     at Error (native)
+43 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+43 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+43 verbose fstream_stack Object.oncomplete (fs.js:93:15)
+44 verbose cwd /home/tomto/Sites/cross
+45 error Linux 4.4.0-96-generic
+46 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "yarn" "-g"
+47 error node v0.11.14
+48 error npm  v2.0.0
+49 error path /usr/local/lib/node_modules/yarn
+50 error code EACCES
+51 error errno -13
+52 error Error: EACCES, mkdir '/usr/local/lib/node_modules/yarn'
+52 error     at Error (native)
+52 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/yarn']
+52 error   stack: 'Error: EACCES, mkdir \'/usr/local/lib/node_modules/yarn\'\n    at Error (native)',
+52 error   errno: -13,
+52 error   code: 'EACCES',
+52 error   path: '/usr/local/lib/node_modules/yarn',
+52 error   fstream_type: 'Directory',
+52 error   fstream_path: '/usr/local/lib/node_modules/yarn',
+52 error   fstream_class: 'DirWriter',
+52 error   fstream_stack:
+52 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+52 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+52 error      'Object.oncomplete (fs.js:93:15)' ] }
+53 error Please try running this command again as root/Administrator.
+54 verbose exit [ -13, true ]
