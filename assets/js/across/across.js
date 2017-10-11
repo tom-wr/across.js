@@ -158,9 +158,9 @@ class Across {
         this.grid_size = 15;
         this.cells = [];
         this.clueNumbers = new Set();
-        this.clues = {across:{}, down:{}}
+        this.clues = {across:{}, down:{}};
         this.activeClue = null;
-        this.activeDirection = null;
+        this.activeDirection = 'across';
     }
 
     _buildGrid() {
@@ -183,18 +183,16 @@ class Across {
 
     _buildClues() {
         this.$clues = this._createCluesElement();
-        for(let clueId in DATA.clues.across){
-            let clue = DATA.clues.across[clueId];
-            let newClue = new AcrossClue(clue.clue, clue.letter_count, clueId, 'A');
-            this.clues.across[newClue.id] = newClue;
-            this.$clues.find('.across-clues-across').first().append(this._createClueElement(newClue));
+        this._buildCluesByDirection('across', DATA.clues.across);
+        this._buildCluesByDirection('down', DATA.clues.down);
+    }
 
-        }
-        for(let clueId in DATA.clues.down){
-            let clue = DATA.clues.down[clueId];
-            let newClue = new AcrossClue(clue.clue, clue.letter_count, clueId, 'D');
-            this.clues.down[newClue.id] = newClue;
-            this.$clues.find('.across-clues-down').first().append(this._createClueElement(newClue));
+    _buildCluesByDirection(direction, data) {
+        for(let clueId in data){
+            let clue = data[clueId];
+            let newClue = new AcrossClue(clue.clue, clue.letter_count, clueId, direction);
+            this.clues[direction][newClue.id] = newClue;
+            this.$clues.find('.across-clues-' + direction).first().append(this._createClueElement(newClue));
         }
     }
 
@@ -277,7 +275,7 @@ class Across {
 
     _formatInput() {
         let $input = $('<input>').attr({'type': 'text', 'maxlength': 1}).addClass('across-cell-input');
-        $('.across-cell:not(blank)').append($input);
+        $('.across-cell:not(.blank)').append($input);
     }
 
     _formatCells(cellHeight) {
@@ -379,9 +377,17 @@ class Across {
     _events() {
 
         this.$grid.on('click', '.across-cell:not(.blank)', (e) => {
-            $('.debugger').first().html('');
             let cellId = $(e.currentTarget).data('across-cell-id');
             let cell = this._getCell(cellId);
+
+            if (this.lastCellClicked == cell.id) {
+                this._toggleDirection();
+            }
+            this.lastCellClicked = cell.id;
+            let clueId = this._getActiveClueByCell(cell);
+            this._highlightCellsByClue(clueId);
+            this._highlightClue(clueId);
+
             return false;
         });
 
@@ -389,6 +395,9 @@ class Across {
             let keyCode = e.originalEvent.keyCode;
             let key = e.originalEvent.key;
             if (keyCode >= 65 && keyCode <= 90){
+
+                $(e.target).val(key);
+
                 let $cell = $(e.target).closest("div");
                 let nextCellId = $cell.data('across-cell-id');
                 this._moveToNextCell(nextCellId);
@@ -398,17 +407,16 @@ class Across {
 
         this.$clues.on('click', '.across-clue', (e) => {
 
-            $('.highlight-clue').removeClass('highlight-clue');
             let targetClue = $(e.currentTarget);
-            targetClue.addClass('highlight-clue');
-
             let activeClueId = targetClue.data('across-clue-id');
+            this._highlightClue(activeClueId);
+
             if(this.clues.down[activeClueId]) {
                 this.activeClue = this.clues.down[activeClueId];
-                this.activeDirection = 'DOWN';
+                this.activeDirection = 'down';
             } else if(this.clues.across[activeClueId]) {
                 this.activeClue = this.clues.across[activeClueId];
-                this.activeDirection = 'ACROSS';
+                this.activeDirection = 'across';
             }
 
             this._get$Cell(this.activeClue.startCell).find('.across-cell-input').first().focus();
@@ -423,7 +431,7 @@ class Across {
 
     _moveToNextCell(cellId) {
         let coords = this._coordsFromKey(cellId);
-        if(this.activeDirection == 'DOWN') {
+        if(this.activeDirection == 'down') {
             coords.x++;
         } else {
             coords.y++;
@@ -442,12 +450,12 @@ class Across {
             for(let j = 0; j < this.cells[i].length; j++)
             {
                 let cell = this.cells[i][j];
-                if(this.activeDirection == 'ACROSS'){
-                    if(cell.clues.across == this.activeClue.id){
+                if(this.activeDirection == 'across'){
+                    if(cell.clues.across == clueId){
                         this._get$Cell(this._coordsToKey(i, j)).addClass('highlight-cell')
                     }
                 } else {
-                    if(cell.clues.down == this.activeClue.id){
+                    if(cell.clues.down == clueId){
                         this._get$Cell(this._coordsToKey(i, j)).addClass('highlight-cell')
                     }
                 }
@@ -455,11 +463,35 @@ class Across {
         }
     }
 
+    _highlightClue(clueId) {
+        $('.highlight-clue').removeClass('highlight-clue');
+        $("[data-across-clue-id='" + clueId + "']").addClass('highlight-clue');
+    }
+
     _printCells() {
         for(let i = 0; i < 14; i++){
             for(let j = 0; j < 14; j++){
                 console.log(this.cells[i][j].clue)
             }
+        }
+    }
+    
+    _getActiveClueByCell(cell) {
+        let clueId = null;
+        if(cell.clues[this.activeDirection]){
+            clueId = cell.clues[this.activeDirection];
+        } else {
+            this._toggleDirection();
+            clueId = cell.clues[this.activeDirection];
+        }
+        return clueId;
+    }
+
+    _toggleDirection() {
+        if(this.activeDirection == 'across') {
+            this.activeDirection = 'down';
+        } else {
+            this.activeDirection = 'across';
         }
     }
 

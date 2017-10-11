@@ -19,8 +19,8 @@
       <file leaf-file-name="cross.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/cross.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding>
                 <element signature="e#1#25#0" expanded="true" />
               </folding>
@@ -28,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="across.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="across.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/across/across.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="402" column="32" lean-forward="false" selection-start-line="402" selection-start-column="32" selection-end-line="402" selection-end-column="32" />
+            <state relative-caret-position="276">
+              <caret line="481" column="54" lean-forward="false" selection-start-line="481" selection-start-column="54" selection-end-line="481" selection-end-column="54" />
               <folding>
                 <element signature="e#34#57#0" expanded="true" />
                 <element signature="e#156#4841#0" expanded="false" />
@@ -44,8 +44,8 @@
       <file leaf-file-name="acrossclue.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/across/acrossclue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="70" lean-forward="false" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+            <state relative-caret-position="52">
+              <caret line="2" column="54" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -54,18 +54,18 @@
       <file leaf-file-name="acrosscell.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/across/acrosscell.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+            <state relative-caret-position="26">
+              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="across.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="across.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/across.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="851">
-              <caret line="112" column="35" lean-forward="false" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+            <state relative-caret-position="2418">
+              <caret line="93" column="8" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -97,12 +97,15 @@
     <findStrings>
       <find>rep</find>
       <find>0</find>
-      <find>each</find>
       <find>_getCell</find>
+      <find>blank</find>
+      <find>each</find>
       <find>input</find>
+      <find>DOWN</find>
     </findStrings>
     <replaceStrings>
       <replace>'0'</replace>
+      <replace>down</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -111,7 +114,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/assets/js/cross.js" />
         <option value="$PROJECT_DIR$/assets/css/main.scss" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
@@ -119,11 +121,12 @@
         <option value="$PROJECT_DIR$/assets/js/across/across_grid.js" />
         <option value="$PROJECT_DIR$/assets/js/across/acrossgrid.js" />
         <option value="$PROJECT_DIR$/assets/js/across/acrosscellarray.js" />
-        <option value="$PROJECT_DIR$/assets/js/across/acrossclue.js" />
         <option value="$PROJECT_DIR$/app/Resources/views/cross/grid.html.twig" />
         <option value="$PROJECT_DIR$/assets/js/across/acrosscell.js" />
-        <option value="$PROJECT_DIR$/assets/js/across/across.js" />
         <option value="$PROJECT_DIR$/assets/css/across.scss" />
+        <option value="$PROJECT_DIR$/assets/js/cross.js" />
+        <option value="$PROJECT_DIR$/assets/js/across/acrossclue.js" />
+        <option value="$PROJECT_DIR$/assets/js/across/across.js" />
       </list>
     </option>
   </component>
@@ -506,12 +509,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507544402219</updated>
-      <workItem from="1507544403705" duration="70559000" />
+      <workItem from="1507544403705" duration="76069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70559000" />
+    <option name="totallyTimeSpent" value="76069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1855" y="1104" width="1855" height="1056" extended-state="6" />
@@ -727,14 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/cross/grid.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -743,48 +738,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/across/acrosscell.js">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/across.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2418">
+          <caret line="93" column="8" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/across/acrosscell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/across/acrossclue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="54" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/cross.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="286">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
             <element signature="e#1#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/across/acrossclue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="70" lean-forward="false" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/across/across.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="402" column="32" lean-forward="false" selection-start-line="402" selection-start-column="32" selection-end-line="402" selection-end-column="32" />
+        <state relative-caret-position="276">
+          <caret line="481" column="54" lean-forward="false" selection-start-line="481" selection-start-column="54" selection-end-line="481" selection-end-column="54" />
           <folding>
             <element signature="e#34#57#0" expanded="true" />
             <element signature="e#156#4841#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/across.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="112" column="35" lean-forward="false" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
