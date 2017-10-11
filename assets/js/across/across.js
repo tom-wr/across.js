@@ -3,6 +3,7 @@ import $ from 'jquery';
 import AcrossCell from './acrosscell.js';
 import AcrossClue from './acrossclue.js';
 
+// Dummy data
 const DATA = {
     grid: [
         ['0','0','0','G','0','P','0','0','0','P','0','B','0','0','0'],
@@ -38,31 +39,31 @@ const DATA = {
             },
             '3:7': {
                 clue: 'Drawn out reorganisation is not right and proper',
-                letter_count: '6'
+                letter_count: '8'
             },
             '5:0': {
                 clue: 'Look after sailor in port',
-                letter_count: '6'
+                letter_count: '4'
             },
             '5:5': {
                 clue: 'Country house has good English minced beef and mash',
-                letter_count: '6'
+                letter_count: '7,3'
             },
             '7:2': {
                 clue: 'Head off big cat outside, after Jack\'s put in danger',
-                letter_count: '6'
+                letter_count: '11'
             },
             '9:0': {
                 clue: 'Trouble from iffy cult I\'d abandoned',
-                letter_count: '6'
+                letter_count: '10'
             },
             '9:11': {
                 clue: 'Some acclaim a Muslim leader',
-                letter_count: '6'
+                letter_count: '4'
             },
             '11:0': {
                 clue: 'Hey! Make allowances for setter',
-                letter_count: '6'
+                letter_count: '6,2'
             },
             '11:9': {
                 clue: 'Passes water hearing struggle for breath',
@@ -70,7 +71,7 @@ const DATA = {
             },
             '13:1': {
                 clue: 'Endless tedious travelling is to become less common',
-                letter_count: '6'
+                letter_count: '3,3'
             },
             '13:8': {
                 clue: 'Regret being without key to recovery',
@@ -80,7 +81,7 @@ const DATA = {
         down: {
             '0:3': {
                 clue: 'Repugnant having several pursuing unnatural urge',
-                letter_count: '6'
+                letter_count: '8'
             },
             '0:5': {
                 clue: 'About to quote work that\'s lyrical',
@@ -88,7 +89,7 @@ const DATA = {
             },
             '0:9': {
                 clue: 'Imparts a dash to cold meat',
-                letter_count: '6'
+                letter_count: '8'
             },
             '0:11': {
                 clue: 'Look round, having heard bee within flower',
@@ -104,15 +105,15 @@ const DATA = {
             },
             '2:7': {
                 clue: ' Goat runs away from insects',
-                letter_count: '6'
+                letter_count: '11'
             },
             '7:5': {
                 clue: 'Heard Sheeran\'s invested in truck',
-                letter_count: '6'
+                letter_count: '6,2'
             },
             '7:11': {
                 clue: 'Proof that even cider production\'s not right',
-                letter_count: '6'
+                letter_count: '8'
             },
             '8:1': {
                 clue: 'Knight, unknown in Jedi order, brought bad luck',
@@ -137,12 +138,13 @@ const DATA = {
 class Across {
 
     constructor(wrapper, options){
+        // set default properties
         this._setDefaults();
         this.$wrapper = wrapper;
+        // set options
         /*if(!isEmpty(options)) {
             Object.assign(this, options);
         }*/
-        //this.acrossGrid = new AcrossGrid(this.grid_size, DATA);
 
         // data structures and inject into dom
         this._buildGrid();
