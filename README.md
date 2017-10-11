@@ -4,6 +4,6 @@ Responsive Crossword App
 
 Across.js javascript library built using ES6, jQuery. See assets/js/across/
 
-Server built with Symfony 3 and webpack.
+Symfony 3 as the server framework and webpack for building and configuration.
 
 ![My image](assets/static/acrossimage.png)
