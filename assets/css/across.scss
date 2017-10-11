@@ -12,6 +12,8 @@ $highlight-light: #4BC6DF;
 .across-grid {
   width: 100%;
   display: table;
+  border: 1px solid black;
+  border-collapse: collapse;
 
   .across-row {
 
@@ -24,7 +26,7 @@ $highlight-light: #4BC6DF;
       $cell_width: 6.66666666667%;
       //padding: 0px;
       //margin: 0px;
-      border: outset 0.5px #000;
+      border: outset 1px #000;
       cursor: text;
       text-align: center;
       vertical-align: middle;
@@ -47,6 +49,7 @@ $highlight-light: #4BC6DF;
 
       input:focus {
         background-color: $highlight;
+        border: none;
       }
 
 
